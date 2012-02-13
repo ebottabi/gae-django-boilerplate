@@ -8,5 +8,5 @@ This boilerplate gets you started to use Django 1.2 on Google App Engine. It has
     - Change the SECRET_KEY variable to something else super complex
 3. In urls.py, change the reference to 'sample_app' to your app folder name
 
-## The sample_app app (essentially an HTML5 boiler plate)
+## The sample_app app (an HTML5 boiler plate)
 This app has one view, no models, and links to one static html page. The html page is a HTML5 boilerplate page which has jQuery, Modernizr, and Google Analytics hooks built in. It also links and serves robots.txt, humans.txt, crossbrowser.xml, and icons.
