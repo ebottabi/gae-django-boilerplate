@@ -5,8 +5,24 @@ api_version: 1
 
 handlers:
 - url: /favicon\.ico
-  static_files: favicon.ico
-  upload: favicon\.ico
+  static_files: /static/images/favicon.ico
+  upload: /static/images/favicon\.ico
+
+- url: /apple-touch-icon\.png
+  static_files: /static/images/apple-touch-icon.png
+  upload: /static/images/apple-touch-icon\.png
+
+- url: /robots\.txt
+  static_files: /static/data/robots.txt
+  upload: /static/data/robots\.txt
+
+- url: /humans\.txt
+  static_files: /static/data/humans.txt
+  upload: /static/data/humans\.txt
+
+- url: /crossdomain\.xml
+  static_files: /static/data/crossdomain.xml
+  upload: /static/data/crossdomain\.xml
 
 - url: /static
   static_dir: static
