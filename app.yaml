@@ -4,6 +4,8 @@ runtime: python
 api_version: 1
 
 handlers:
+
+# Web site 'standard files' such as icons and .txt/.xml files
 - url: /favicon\.ico
   static_files: static/images/favicon.ico
   upload: static/images/favicon\.ico
@@ -24,8 +26,10 @@ handlers:
   static_files: static/data/crossdomain.xml
   upload: static/data/crossdomain\.xml
 
+# Link to static files
 - url: /static
   static_dir: static
 
+# Everything else served by the app
 - url: .*
   script: main.py
